@@ -25,7 +25,7 @@ This page is intended to enable a user to keep many contacts and features the ab
 * Clone repository
 * Using command line change working directory to cloned repository
 * Execute command "dnu restore"
-* Start web server with document root address-book/web
+* Start web server "dnx kestrel"
 * Navigate to web server using Modern Web Browser
 
 ##Legal
