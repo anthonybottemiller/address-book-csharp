@@ -43,5 +43,9 @@ namespace AddressBook.Objects
     {
       return _contacts;
     }
+    public static Contact Find(id)
+    {
+      return _contacts[id];
+    }
   }
 }
