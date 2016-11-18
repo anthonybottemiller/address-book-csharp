@@ -26,7 +26,6 @@ namespace AddressBook
         Contact.DeleteAll();
         return View["contacts_cleared.cshtml"];
       };
-
     }
   }
 }
