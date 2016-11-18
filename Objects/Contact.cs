@@ -38,5 +38,10 @@ namespace AddressBook.Objects
     {
       return _address;
     }
+
+    public static List<Contact> GetAll()
+    {
+      return _contacts;
+    }
   }
 }
