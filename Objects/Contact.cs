@@ -47,9 +47,9 @@ namespace AddressBook.Objects
     {
       return _contacts[id];
     }
-    public static Contact DeleteAll()
+    public static void DeleteAll()
     {
-      _contacts = {};
+      _contacts = new List<Contact> {};
     }
   }
 }
