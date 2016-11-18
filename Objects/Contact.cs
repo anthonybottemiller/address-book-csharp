@@ -43,7 +43,7 @@ namespace AddressBook.Objects
     {
       return _contacts;
     }
-    public static Contact Find(id)
+    public static Contact Find(int id)
     {
       return _contacts[id];
     }
