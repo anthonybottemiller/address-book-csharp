@@ -18,5 +18,25 @@ namespace AddressBook.Objects
       _address = address;
       _contacts.Add(this);
     }
+
+    public string GetId()
+    {
+      return _id;
+    }
+
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public string GetPhone()
+    {
+      return _phoneNumber;
+    }
+
+    public string GetAddress()
+    {
+      return _address;
+    }
   }
 }
