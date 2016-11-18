@@ -7,7 +7,7 @@ namespace AddressBook.Objects
     private static List<Contact> _contacts = new List<Contact> {};
     private string _name;
     private int _id;
-    private string _phoneNumber
+    private string _phoneNumber;
     private string _address;
 
     public Contact(string contactName, string phoneNumber, string address)
@@ -19,7 +19,7 @@ namespace AddressBook.Objects
       _contacts.Add(this);
     }
 
-    public string GetId()
+    public int GetId()
     {
       return _id;
     }

@@ -7,7 +7,10 @@ namespace AddressBook
   {
     public HomeModule()
     {
-      
+      Get["/"] = _ => {
+        var contacts = Contact.GetAll();
+        return View["index.cshtml", contacts];
+      };
     }
   }
 }
