@@ -12,10 +12,12 @@
       {
         <h3>No contacts exist yet!</h3>
       }
-      @foreach (var contact in Model)
-      {
-        <h3><a href="/contact/@contact.GetId()">@contact.GetName()</a></h3>
-      }
+      <ul>
+        @foreach (var contact in Model)
+        {
+          <li><a href="/contact/@contact.GetId()">@contact.GetName()</a></li>
+        }
+      </ul>
       <a href="/contact/new"><button type="button" class="btn btn-success">New Contact</button></a>
       <form action="/contact/clear" method="post">
         <button type="submit" class="btn btn-danger">Clear Contacts</button>
