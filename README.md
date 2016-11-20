@@ -1,4 +1,4 @@
-#address-book
+#address-book-csharp
 
 #####This project helps you keep track of contacts
 
@@ -12,13 +12,13 @@ This page is intended to enable a user to keep many contacts and features the ab
 * CSS
 * BOOTSTRAP
 * C#
-* DNX
+* Mono
 * Nancy
 * Razor
 
 ##Requirements
 * Modern Web Browser
-* DNX (For installing dependent technologies)
+* Mono
 * Internet Access
 
 ##Installation
