@@ -8,11 +8,11 @@
   <body>
     @if (@Model.Count == 0)
     {
-    <h2>No contacts exits yet!</h2>
+      <h2>No contacts exits yet!</h2>
     }
     @foreach (var contact in Model)
     {
-    <h3><a href="/contact/@contact.GetId()">@contact.GetName()</a></h3>
+      <h3><a href="/contact/@contact.GetId()">@contact.GetName()</a></h3>
     }
     <a href="/contact/new">New Contact</a>
     <form action="/contact/clear" method="post">
