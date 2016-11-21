@@ -46,10 +46,6 @@ namespace AddressBook.Objects
     {
       return _contacts[id];
     }
-    public static void DeleteId(int id)
-    {
-      _contacts.RemoveAt(id);
-    }
     public static void DeleteAll()
     {
       _contacts = new List<Contact> {};
