@@ -38,7 +38,6 @@ namespace AddressBook.Objects
     {
       return _address;
     }
-
     public static List<Contact> GetAll()
     {
       return _contacts;
@@ -46,6 +45,10 @@ namespace AddressBook.Objects
     public static Contact Find(int id)
     {
       return _contacts[id];
+    }
+    public static void DeleteId(int id)
+    {
+      _contacts.RemoveAt(id);
     }
     public static void DeleteAll()
     {
