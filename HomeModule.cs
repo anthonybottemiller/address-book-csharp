@@ -18,10 +18,10 @@ namespace AddressBook
         var searchedContact = Contact.Find(parameters.id);
         return View["contact.cshtml", searchedContact];
       };
-      Post["/contact/{id}/delete"] = parameters => {
-        Contact.DeleteId(id);
+      Get["/contact/{id}/delete"] = parameters => {
+        Contact.DeleteId(parameters.id);
         var contacts = Contact.GetAll();
-        return View["index.cshtml", contacts]
+        return View["index.cshtml", contacts];
       };
       Post["/contact/new"] = _ => {
         var newContact = new Contact(Request.Form["contact-name"], Request.Form["phone-number"], Request.Form["contact-address"]);
