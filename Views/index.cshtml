@@ -15,7 +15,10 @@
       <ul>
         @foreach (var contact in Model)
         {
-          <li><a href="/contact/@contact.GetId()">@contact.GetName()</a><a href="/contact/@contact.GetId()/delete"><button type="button" class="btn btn-danger">Delete</button></a></li>
+          <li>
+            <a href="/contact/@contact.GetId()">@contact.GetName()</a>
+            <a href="/contact/@contact.GetId()/delete"><button type="button" class="btn btn-danger">Delete</button></a>
+          </li>
         }
       </ul>
       <a href="/contact/new"><button type="button" class="btn btn-success">New Contact</button></a>
